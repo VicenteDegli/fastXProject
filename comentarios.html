@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Projeto FastX</title>
+        <link rel="stylesheet" href="./comentariosStyle.css"/>
+    </head>
+    <body>
+        <header>
+        <img id="logo" src="./midias/fastXIogo.png"/>
+        <nav>
+            <ul class="linkList">
+                <a href="./index.html">
+                    <li class="linkItem">Home</li>
+                </a>
+                <a href="./contatos.html">
+                    <li class="linkItem">Contatos</li>
+                </a>
+                <a href="./fotos.html">
+                    <li class="linkItem">Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li class="linkItem">Comentários</li>
+                </a>
+            </ul>
+        </nav>
+        </header>
+        <div class="comentsContainer">
+            <div class="introduction">
+                Veja oque estão dizendo sobre battiman 2022 no Brasil!
+            </div>
+            <div class="coments">
+                <div class="starContent">
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <p>Josias</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+            <div class="coments">
+                <div class="starContent">
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <p>Matildes</p>
+                Quisque non tellus orci ac auctor augue mauris. Tempus urna et pharetra pharetra. Egestas egestas fringilla phasellus faucibus. Ullamcorper dignissim cras tincidunt lobortis feugiat. Amet justo donec enim diam vulputate ut pharetra sit. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. 
+            </div>
+            <div class="coments">
+                <div class="starContent">
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="star"></div>
+                </div>
+                <p>João Victor</p>
+                Purus sit amet luctus venenatis lectus. Sed adipiscing diam donec adipiscing tristique risus. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu.
+            </div>
+            <div class="coments">
+                <div class="starContent">
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                </div>
+                <p>Minervina</p>
+                Nulla pellentesque dignissim enim sit. Sit amet dictum sit amet justo donec enim. Metus aliquam eleifend mi in nulla posuere sollicitudin. Neque gravida in fermentum et sollicitudin ac orci phasellus.
+            </div>
+            <div class="coments">
+                <div class="starContent">
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="starFull"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+                <p>Mathias</p>
+                <p>Pretium fusce id velit ut. Nisl nisi scelerisque eu ultrices vitae auctor eu. Donec pretium vulputate 
+                sapien nec sagittis aliquam malesuada bibendum arcu. Ullamcorper eget nulla facilisi etiam dignissim. 
+                Nunc sed augue lacus viverra.  <span id="pontos"></span>
+                <span id="mais">Odio aenean sed adipiscing diam donec adipiscing. Sit amet est placerat in egestas. 
+                Congue quisque egestas diam 
+                in arcu cursus. Neque laoreet suspendisse interdum consectetur libero. Ac turpis egestas integer eget aliquet 
+                nibh praesent. Rutrum tellus pellentesque eu tincidunt. Diam ut venenatis tellus in metus. Eros donec ac odio 
+                tempor orci dapibus ultrices in iaculis. Id venenatis a condimentum vitae. In egestas erat imperdiet sed. 
+                Sollicitudin tempor id eu nisl nunc mi ipsum. Cras adipiscing enim eu turpis egestas pretium. Arcu cursus 
+                euismod quis viverra nibh cras pulvinar mattis nunc. Cursus eget nunc scelerisque viverra mauris in aliquam sem.</span></p>
+                <button class="scriptButton" onclick=leiaMais() id="btnLeiaMais">Leia Mais...</button>
+            </div>
+            <div class="coments">
+                <p>Compartilhe sua opinião!</p>
+                <ul class="avaliacao">
+                    <li class="starIcon ativo" avaliacaoNota="1" onclick="atribuiNota(event)"></li>
+                    <li class="starIcon" avaliacaoNota="2" onclick="atribuiNota(event)"></li>
+                    <li class="starIcon" avaliacaoNota="3" onclick="atribuiNota(event)"></li>
+                    <li class="starIcon" avaliacaoNota="4" onclick="atribuiNota(event)"></li>
+                    <li class="starIcon" avaliacaoNota="5" onclick="atribuiNota(event)"></li>
+                </ul>
+                <textarea class="text-box" type="text" name="comentario" placeholder="Compartilhe sua opnião..." ></textarea>
+                <button class="enviarButton" onclick="message()">Enviar</button>
+            </div>
+        </div>  
+        <footer>   
+            <img style="object-fit: contain; margin: 10px;" id="logo" src="./midias/fastXIogo.png"/>
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contatos.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+            <span class="rigths">Todos os direitos reservados ©</span>
+            <span class="rigths">Desenvolvido por: Vicente de Paulo</span>
+        </footer>
+    </body>
+    <script type="text/javascript" src="./cometariosScript.js"></script>
+</html> 

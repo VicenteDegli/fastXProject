@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #d21617;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+#banner{
+    background-image: url('./midias/banner.webp');
+    background-position: 50% 15%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#trailer-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #000
+}
+
+.content{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0px 20px 0px 20px;
+}
+
+.trailer{
+    width:35%;
+    height: 250px;
+}
+
+#sinopse{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.description{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 10   0%;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #000;
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+.banner-1{
+    background-image: url("./midias/vinDieselCard.jpg");
+}
+
+.banner-2{
+    background-image: url("./midias/jasonMamoaCard.jpg");
+}
+
+.banner-3{
+    background-image: url("./midias/johnCenaCard.jpg");
+}
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+@media (max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    li{
+        font-size: 12px;
+    }
+
+    #logo{
+        width: 70px;
+    }
+
+    #banner{
+        background-position: 40%;
+    }
+
+    #trailer-container{
+        height: auto;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .trailer{
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 100%;
+        margin: 0;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 768px){
+   #logo{
+    width: 70px;
+   } 
+
+   li{
+    font-size: 10px;
+   }
+
+   .contatoContainer{
+      display: block;
+   }
+
+   .footer-navigation{
+      display: block;
+   }
+}

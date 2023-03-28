@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;  
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+li:hover{
+    color: red;
+}
+
+#body{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+#contentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #161616;
+    padding: 10px;
+}
+
+.introduction{
+    width: auto;
+    padding: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 18px;
+    color: #fff; 
+    margin-bottom: 10px;
+}
+
+.fotosContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: auto;
+    height: fit-content;
+}
+
+.fotos{
+    width: auto;
+    height: 150px;
+    background-color: rgb(219, 225, 231) solid;
+    background-size: contain;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.fotos:hover{
+    transform: scale(1.02);
+}
+
+footer{
+    padding-top: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+@media (max-width: 768px){
+    #logo{
+     width: 70px;
+    } 
+ 
+    li{
+     font-size: 10px;
+    }
+ 
+    .fotosContainer{
+        justify-content: center;
+    }
+ 
+    .footer-navigation{
+       display: block;
+    }
+ }
